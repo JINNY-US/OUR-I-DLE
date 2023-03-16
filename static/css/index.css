@@ -1,0 +1,159 @@
+/*일단은 쓰던거 복붙했는데 main 작업하면서 천천히 수정할게요!!*/
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+* {
+    font-family: 'Dongle', sans-serif;
+}
+
+h1 {
+    color: #000000;
+    font-size: 55px;
+}
+div > h4 {color: #4a4a4a;}
+div > .form-control {font-size: 25px;}
+a {
+    /*padding: 5px;*/
+    text-decoration: none;
+    color: #000000;
+}
+
+.title {
+    width: 100%;
+    height: 250px;
+
+    background-image: url('https://blog.kakaocdn.net/dn/sZ7ux/btqDSzwx1NN/c0FYKBDM9WacVK61NpYar1/img.jpg');
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.title_img {
+    width: 330px;
+    height: 120px;
+    display: flex;
+    background-color: white;
+}
+
+.team_title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #606060;
+}
+
+.team_detail {
+    margin: 0px 50px 0px 50px;
+    font-size: 30px;
+}
+
+.add_team {
+    float: right;
+    margin-right: 50px;
+    font-size: 27px;
+}
+
+.team_card {
+    margin: 20px auto 20px auto;
+    width: 95%;
+    max-width: 1500px;
+    align-items: center;
+}
+
+/* .row_space {
+    margin-right: 150px;
+} */
+
+.team_rule {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* background-color: rgb(150, 150, 150); */
+    text-align: center;
+    line-height: 250px;
+    color: #fff;
+    font-size: 30px;
+}
+#role_1{
+    background-image: url('https://i.pinimg.com/474x/0a/e9/cc/0ae9ccaaffd88fa2ca2a0c8c4f67d36e.jpg');
+    background-position: center;
+}
+
+#role_2{
+    background-image: url('https://i.pinimg.com/736x/93/60/b7/9360b70b683c70b7b94ddc50c3d62ab5.jpg');
+    background-position: center;
+}
+
+#role_3{
+    background-image: url('https://ts2.mm.bing.net/th?q=%20%EB%85%B8%ED%8A%B8%EB%B6%81,%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B3%B4%EB%9D%BC%EC%83%89%20%EC%B4%88%EA%B3%A0%ED%99%94%EC%A7%88%20%EB%B0%B0%EA%B2%BD%ED%99%94%EB%A9%B4%201920X1080%20%EB%AA%A8%EC%9D%8C%201%ED%83%84%20:%20%EB%84%A4%EC%9D%B4%EB%B2%84%20%EB%B8%94%EB%A1%9C%EA%B7%B8');
+    background-position: center;
+}
+
+
+.modal-content {
+    background-color: rgb(247, 227, 255);
+}
+
+.modal-title {
+    background-image: url(https://cdn.pixabay.com/photo/2021/07/13/07/10/background-6462631_1280.jpg);
+    color: rgb(219, 218, 218);
+}
+
+#form-rabel {
+    width: 400px;
+    margin: 0px 0px 0px 50px;
+}
+
+/* 버튼 위치 css */
+.add_btn {
+    margin-right: 50px;
+    float: right;
+}
+
+.edit_btn {
+    margin: 200px;
+}
+
+
+/* .mytitle > button {
+    width: 200px;
+    height: 50px;
+
+    background-color: transparent;
+    color: white;
+
+    border-radius: 50px;
+    border: 1px solid white;
+
+    margin-top: 10px;
+}
+        
+.mytitle > button:hover {
+    border: 2px solid white;
+} */
+
+
+
+/* .mypost {
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 3px 0px gray;
+} */
+
+/* .mybtns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+.mybtns > button {
+    margin-right: 10px;
+} */
