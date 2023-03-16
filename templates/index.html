@@ -79,7 +79,23 @@
                             <hr>
                         </div>
                         <br>
-                        <div class="form-floating mb-3" id="form-rabel">
+                        <form action="index.html">
+                            <input type="text" class="form-control" id="modal_img" placeholder="이미지 URL을 넣어주세요."><br>
+                            <input type="text" class="form-control" id="modal_name" placeholder="이름"><br>
+                            <input type="text" class="form-control" id="modal_role" placeholder="역할"><br>
+                            <input type="text" class="form-control" id="modal_mbti" placeholder="MBTI"><br>
+                            <textarea class="form-control" placeholder="자기소개" id="modal_selfid" style="height: 100px"></textarea><br>
+                            <input type="text" class="form-control" id="modal_tmi" placeholder="TMI"><br><br>
+                            <div class="mybtns" style=" margin: 0 10px 20px; float: right;">
+                                <button onclick="save_members()" type="button" class="btn btn-light">
+                                    <h4>작성하기</h4>
+                                </button>
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+                                    <h4>닫기</h4>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- <div class="form-floating mb-3" id="form-rabel">
                             <input type="text" class="form-control" id="modal_img" placeholder="이미지 넣는 칸">
                             <label for="floatingInput">이미지 URL을 넣어주세요.</label>
                         </div>
@@ -106,14 +122,14 @@
                         </div>
                         <br>
                         <div class="mybtns" style=" margin: 0 10px 20px; float: right;">
-                            <button onclick="writing()" type="button" class="btn btn-light">
+                            <button onclick="save_members()" type="button" class="btn btn-light">
                                 <h4>작성하기</h4>
                             </button>
                             <button type="button" class="btn btn-light" data-bs-dismiss="modal">
                                 <h4>닫기</h4>
                             </button>
-                        </div>
-                    </div>
+                        </div>-->
+                    </div> 
                 </div>
             </div>
         </div>
@@ -122,41 +138,22 @@
     </div>
     <div class="team_detail">
         <div class="team_card">
-            <div class="row row-cols-1 row-cols-md-5 g-4" id="card_list">
-
-                <button class="col" type="button" onclick="move()">
-                    <div class="card h-100">
-                        <img src="https://cdn.discordapp.com/attachments/801861358538588173/1085019409615167548/image.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">김경진</h5>
-                            <p class="card-text">여기에 역할</p>
-                        </div>
-                    </div>
-                </button>
+            <form class="row row-cols-1 row-cols-md-5 g-4" id="card_list" method="post" action="detail.html">
                 <div class="col">
                     <div class="card h-100">
                         <img src="https://cdn.discordapp.com/attachments/801861358538588173/1085019409615167548/image.png"
                             class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">김경진</h5>
-                            <p class="card-text">여기에 역할</p>
+                            <p class="card-title">김경진</p>
+                            <h5 class="card-text">여기에 역할</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://cdn.discordapp.com/attachments/801861358538588173/1085019409615167548/image.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">김경진</h5>
-                            <p class="card-text">여기에 역할</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
-    </div>
+
+    </div> 
+    
     <br><br>
     <div class="footer">
         <div class="footer_title">

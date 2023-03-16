@@ -57,6 +57,8 @@ a {
     font-size: 27px;
 }
 
+form .form-control {margin: 0px 20px 0px 20px;}
+
 .team_card {
     margin: 20px auto 20px auto;
     width: 95%;
