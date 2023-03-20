@@ -20,32 +20,30 @@
 <body>
     <div class="title">
         <h1>우리 아이들</h1>
+        <!--실시간 서울의 온도,날씨-->
         <div>
             <h4>실시간 서울의 체감온도: <span id="temp"></span>도</h4>
         </div>
         <div>
             <h4>실시간 서울의 날씨: <span id="weather"></span></h4>
         </div>
-    </div>
+    </div><br>
     <div class="team_title">팀소개</div><br>
     <div class="clearfix team_detail">
         <img src="https://cdn.discordapp.com/attachments/801861358538588173/1085000010741063751/image.png"
             class="col-md-6 float-md-end mb-3 ms-md-3" alt="우리 아이들 단체사진">
-
         <p class="row_space">
             안녕하세요 저희는 mbti 앞부분이 i로만 이루어진 A-5조 입니다.<br>
             관심사가 반려동물인 사람들이 자기소개를 주제로 미니프로젝트를 만들게 되었는데요.<br>
             각각 취미도 다르고 좋아하는 것들도 다르지만 개발에 관한 얘기만 나오면 밝아지는 우리 아이들 많은 관심 부탁드립니다. (적당히 부탁드립니다.)
         </p>
     </div>
-
-    <br><br>
-    <hr><br><br>
-
+    <br><br><br>
+    <hr><br><br><br>
     <div class="team_title">팀 규칙</div><br>
     <div class="team_detail">
         <div class="team_card">
-            <div class="row row-cols-1 row-cols-md-3 team_detail">
+            <div class="row row-cols-1 row-cols-md-3 team_detail" id="teamrule-wrap">
                 <div class="col">
                     <div class="team_rule" id="role_1">점심시간: 12:00~13:00</div>
                 </div>
@@ -58,103 +56,28 @@
             </div>
         </div>
     </div>
-    <br><br>
-    <hr><br><br>
+    <br><br><br>
+    <hr><br><br><br>
+    <div class="team_title" id="team_intro">팀원 소개</div>
     <div class="add_btn">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@mdo">
+            onclick=move() data-bs-whatever="@mdo">
             <h3>함께하기</h3>
-        </button>
+        </button><br><br>
     </div>
-    <div class="team_title">팀원 소개</div>
     <br><br>
-    <div class="add_team">
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="form-div" id="form">
-                        <div class="modal-title">
-                            <br>
-                            <h2 style="text-align:center;">프로필 작성하기</h2>
-                            <hr>
-                        </div>
-                        <br>
-                        <form action="index.html">
-                            <input type="text" class="form-control" id="modal_img" placeholder="이미지 URL을 넣어주세요."><br>
-                            <input type="text" class="form-control" id="modal_name" placeholder="이름"><br>
-                            <input type="text" class="form-control" id="modal_role" placeholder="역할"><br>
-                            <input type="text" class="form-control" id="modal_mbti" placeholder="MBTI"><br>
-                            <textarea class="form-control" placeholder="자기소개" id="modal_selfid" style="height: 100px"></textarea><br>
-                            <input type="text" class="form-control" id="modal_tmi" placeholder="TMI"><br><br>
-                            <div class="mybtns" style=" margin: 0 10px 20px; float: right;">
-                                <button onclick="save_members()" type="button" class="btn btn-light">
-                                    <h4>작성하기</h4>
-                                </button>
-                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">
-                                    <h4>닫기</h4>
-                                </button>
-                            </div>
-                        </form>
-                        <!-- <div class="form-floating mb-3" id="form-rabel">
-                            <input type="text" class="form-control" id="modal_img" placeholder="이미지 넣는 칸">
-                            <label for="floatingInput">이미지 URL을 넣어주세요.</label>
-                        </div>
-                        <div class="form-floating mb-3" id="form-rabel">
-                            <input type="text" class="form-control" id="modal_name" placeholder="이름을 입력하세요.">
-                            <label for="floatingInput">이름</label>
-                        </div>
-                        <div class="form-floating mb-3" id="form-rabel">
-                            <input type="text" class="form-control" id="modal_role" placeholder="역할을 입력하세요.">
-                            <label for="floatingInput">역할</label>
-                        </div>
-                        <div class="form-floating mb-3" id="form-rabel">
-                            <input type="text" class="form-control" id="modal_mbti" placeholder="MBTI를 입력하세요.">
-                            <label for="floatingInput">MBTI</label>
-                        </div>
-                        <div class="form-floating mb-3" id="form-rabel">
-                            <textarea class="form-control" placeholder="자기소개를 입력해보세요." id="modal_selfid"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">자기소개</label>
-                        </div>
-                        <div class="form-floating mb-3" id="form-rabel">
-                            <input type="text" class="form-control" id="modal_tmi" placeholder="TMI를 입력해보세요.">
-                            <label for="floatingInput">TMI</label>
-                        </div>
-                        <br>
-                        <div class="mybtns" style=" margin: 0 10px 20px; float: right;">
-                            <button onclick="save_members()" type="button" class="btn btn-light">
-                                <h4>작성하기</h4>
-                            </button>
-                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">
-                                <h4>닫기</h4>
-                            </button>
-                        </div>-->
-                    </div> 
-                </div>
-            </div>
+    </div><br>
+    <div class="team_card">
+        <div class="row row-cols-1 row-cols-md-5 g-4" id="cards-box">
+            <!-- 팀카드 추가되는 부분에서, 반응형 적용을 못하여 사진의 크기가 줄어들지 않는 현상 발생
+                 이후에 추가 작업이 필요함 -->
         </div>
-        <br>
     </div>
+    <br><br><br><br>
+    <div id="detail_box">
+        <!-- 팀카드 클릭시 나오는 프로필 상세, 여기도 반응형 구현을 못해 창이 줄어들 시, 
+             프로필 오른쪽의 줄글들이 사진 밑으로 내려가는 현상이 발생함 -->
     </div>
-    <div class="team_detail">
-        <div class="team_card">
-            <form class="row row-cols-1 row-cols-md-5 g-4" id="card_list" method="post" action="detail.html">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://cdn.discordapp.com/attachments/801861358538588173/1085019409615167548/image.png"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-title">김경진</p>
-                            <h5 class="card-text">여기에 역할</h5>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-    </div> 
-    
-    <br><br>
     <div class="footer">
         <div class="footer_title">
             | 우리 아이들 미니 프로젝트 |
@@ -162,11 +85,11 @@
             <div class="footer_detail">AI 트랙 과정의 첫 프로젝트</div>
         </div>
         <div class="footer_team">
-            <a href="https://allitail.tistory.com/">원윤희</a><br>
-            <a href="https://velog.io/@posei0418">방현재</a><br>
-            <a href="https://hr1998.tistory.com">박혜린</a><br>
-            <a href="https://velog.io/@nmkk1234">김혁준</a><br>
-            <a href="https://air-jinny.tistory.com/">김경진</a>
+            <a href="https://allitail.tistory.com/" target="_blank">원윤희</a><br>
+            <a href="https://velog.io/@posei0418" target="_blank">방현재</a><br>
+            <a href="https://hr1998.tistory.com" target="_blank">박혜린</a><br>
+            <a href="https://velog.io/@nmkk1234" target="_blank">김혁준</a><br>
+            <a href="https://air-jinny.tistory.com/" target="_blank">김경진</a>
         </div>
     </div>
 </body>

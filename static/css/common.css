@@ -2,18 +2,19 @@
 * {
     font-family: 'Dongle', sans-serif;
 }
-
 /* 마진 패딩 초기화 */
 * { padding: 0; margin: 0; }
 
 /* 페이지 기본 글꼴과 크기 설정 */
+body { font-family: 'Gowun Dodum', sans-serif;   font-size: 14px; }
 img { border: 0;}
 ul { list-style-type: none; }
 
 /* <a> 태그 기본 설정 */
 a { display: inline-block; text-decoration: none; }
 a:link { text-decoration:none; color: #ffffff; }
-a:hover { text-decoration:none; color: #ffffff; }
+
+/* 하단 푸터 */
 
 .footer {
     background-color: #c397fb; width: 100%; height: 245px; font-size: 50px; 
@@ -39,3 +40,4 @@ a:hover { text-decoration:none; color: #ffffff; }
     margin-left: 50px;
     flex-direction: column;
 }
+.footer_team :hover {color: #ffffff;}
